@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Running</title>
+    <style>
+      footer{
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+        color:#2957cc;
+      }
+
+      .darkmode footer{
+        color: rgb(247, 247, 126);
+      }
+      a{
+        display: block;        
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(242, 242, 247);
+      }
+      a:hover{
+        cursor: pointer;
+      }
+      .darkmode a{
+      color: rgb(247, 247, 126);
+      }
+       h1{
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(242, 242, 247);
+      }
+      .darkmode h1{
+      color: rgb(247, 247, 126);
+      }
+      img {
+        max-width: 100%;
+        border-radius: 10px
+      }
+      p{
+        font-size: 16px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: white;
+      }
+      .darkmode p{
+        color: rgb(247, 247, 126);
+      }
+        .ChangeTheme{
+        border-radius: 25px;
+        border-width: 0.5px;
+        margin: 20px auto;
+        display: block;
+        background:radial-gradient(circle at 12.3% 19.3%, 
+       rgb(85, 88, 218) 0%, 
+       rgb(95, 209, 249) 100.2%);
+       color: white;
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        box-shadow: 4px 2px 2px grey;
+      }
+        .ChangeTheme:Hover{
+        color:#2957cc;
+        cursor: pointer;
+        border-width: 0.5px;
+        background:white;
+        border-radius: none;
+        transition: all 150ms ease-in-out;
+        }
+        .darkmode .ChangeTheme{
+          background: #374268;
+          border-color:#374268;
+          box-shadow: none;
+          color: rgb(247, 247, 126);
+        }
+        .darkmode .ChangeTheme:hover{
+          color:#374268;
+          cursor: pointer;
+          background: rgb(247, 247, 126);
+          transition: all 150ms ease-in-out;
+        }
+        .container{
+         background:radial-gradient(circle at 12.3% 19.3%, 
+         rgb(85, 88, 218) 0%, 
+         rgb(95, 209, 249) 100.2%);
+          display: block;
+          max-width: 600px;
+          border-radius: 10px;
+          padding: 20px;
+          margin: 0 auto;
+        }
+
+       .darkmode {
+       background: radial-gradient(circle at 24.1% 68.8%, 
+       rgb(50, 50, 50) 0%, 
+       rgb(0, 0, 0) 99.4%);
+      }
+      .darkmode .container{
+        background: linear-gradient(112.1deg, 
+        rgb(32, 38, 57)
+        11.4%, rgb(63, 76, 119) 70.2%);
+      }
+
+      .image-gallery{
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        object-fit: cover;
+      }
+      .image-gallery img:hover{
+        transform: scale(1.2);
+        transition: transform 150ms ease-in-out;
+      }
+
+      .MainImage{
+        height: 400px;
+        width: 600px;
+      }
+      .MainImage:hover{
+      filter: contrast(80%);
+      transition: filter 150ms ease-in-out;
+      transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="ChangeTheme">Change Theme</button>
+    <div class = "container">
+    <h1>Running</h1>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/408/original/pexels-admiral-general-m-%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90-godshepherdly-694587.jpg?1668750701"
+     class = "MainImage"
+     id="Pic1"
+     />
+     <span class="image-gallery">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/427/original/jenny-hill-mQVWb7kUoOE-unsplash.jpg?1668758827"
+        id = "Pic2"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/410/original/pexels-pixabay-235922.jpg?1668750834"
+        id = "Pic3"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/411/original/andrea-leopardi-QVD3Xht9txA-unsplash.jpg?1668750947"
+         id = "Pic4"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/429/original/pexels-rfstudio-3621183.jpg?1668759091"
+        id = "Pic5"
+        />
+    </span>
+  </body>
+    <p>
+      Running is a rapid movement characterised by a
+      length of time where both feet are in the air. Walking is a slower form of
+      movement in humans where one foot is on the ground at all times.
+      <br /> 
+      <br />
+      In the past, running allowed humans to be better hunters and escape from
+      predators. Now, running is a mode of stress relief, boosting brain
+      activity, and keeping healthy. It can be enjoyed in a group or
+      independently; for example, many people enjoy Park Run, a group run in a
+      park, in select locations across the UK.
+    </p>
+    <a 
+    href="https://www.parkrun.org.uk/"
+    target="_blank">
+      Find out more about Park Run
+    </a>
+  </div>
+    <footer>Coded by Catherine Glover</footer>
+    <script>
+      function makeItDifferentMode() {
+        let body = document.querySelector("body");
+        
+        if(body.classList.contains("darkmode")){
+          body.classList.remove("darkmode")
+            let img = document.querySelector(".MainImage")
+          document.getElementById("Pic1").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/408/original/pexels-admiral-general-m-%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90-godshepherdly-694587.jpg?1668750701"
+          document.getElementById("Pic2").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/427/original/jenny-hill-mQVWb7kUoOE-unsplash.jpg?1668758827"
+          document.getElementById("Pic3").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/410/original/pexels-pixabay-235922.jpg?1668750834"
+          document.getElementById("Pic4").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/411/original/andrea-leopardi-QVD3Xht9txA-unsplash.jpg?1668750947"
+          document.getElementById("Pic5").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/429/original/pexels-rfstudio-3621183.jpg?1668759091"
+        }  else{
+          body.classList.add("darkmode");
+            let img = document.querySelector(".MainImage")
+          document.getElementById("Pic1").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/446/original/pexels-philip-ackermann-878151_%281%29.jpg?1668762457";
+        document.getElementById("Pic2").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/445/original/pexels-pixabay-40751_%282%29.jpg?1668762300";
+        document.getElementById("Pic3").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/435/original/fitsum-admasu-oGv9xIl7DkY-unsplash.jpg?1668761167";
+        document.getElementById("Pic4").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/442/original/pexels-pixabay-33703.jpg?1668761985";
+        document.getElementById("Pic5").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/436/original/pexels-pixabay-39308.jpg?1668761599";
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", makeItDifferentMode);
+    </script>
+  </body>
+</html>
